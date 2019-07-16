@@ -23,17 +23,21 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.less$/,
-        use: [
-          "style-loader",
-          { loader: "css-loader", options: { importLoaders: 1 } },
-          "less-loader"
-        ],
+        test: /\.js$/,
+        use: "babel-loader",
         include: path.join(__dirname, "src")
       },
       {
-        test: /\.js$/,
-        use: "babel-loader",
+        test: /\.less$/,
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: { sourceMap: true, importLoaders: 1 }
+          },
+          "postcss-loader",
+          "less-loader"
+        ],
         include: path.join(__dirname, "src")
       }
     ]

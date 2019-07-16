@@ -35,5 +35,10 @@
   },
   "dependencies": {
     "vue": "^2.6.10"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }

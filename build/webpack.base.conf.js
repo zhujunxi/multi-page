@@ -13,5 +13,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html"
     })
-  ]
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        use: "babel-loader",
+        include: path.join(__dirname, "src")
+      }
+    ]
+  }
 };

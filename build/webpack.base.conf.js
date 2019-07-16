@@ -28,7 +28,8 @@ module.exports = {
           "style-loader",
           { loader: "css-loader", options: { importLoaders: 1 } },
           "less-loader"
-        ]
+        ],
+        include: path.join(__dirname, "src")
       },
       {
         test: /\.js$/,

@@ -39,6 +39,12 @@ module.exports = {
           "less-loader"
         ],
         include: path.join(__dirname, "src")
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        use: "url-loader",
+        // include: path.resolve(__dirname + "/src/"),
+        exclude: /node_modules/
       }
     ]
   }

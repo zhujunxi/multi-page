@@ -9,6 +9,12 @@ module.exports = {
     path: path.join(__dirname, "..", "dist"),
     filename: "js/[name].[hash:7].js"
   },
+  resolve: {
+    alias: {
+      vue$: "vue/dist/vue.esm.js",
+      "@": path.resolve(__dirname, "/src")
+    }
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html"

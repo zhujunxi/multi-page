@@ -8,7 +8,7 @@ var typeWriter = {
     return this.msg.length;
   },
   seq: 0,
-  speed: 150, //´ò×ÖÊ±¼ä(ms)
+  speed: 150,
   type: function() {
     var _this = this;
     document.getElementById("main").innerHTML = _this.msg.substring(
@@ -27,9 +27,8 @@ var typeWriter = {
   }
 };
 window.onload = function() {
-  alert("welcome to //www.jb51.net");
   var msg =
-    "JS´ò×Ö»úÐ§¹û £¬Ô­ÀíºÜ¼òµ¥£ºÃ¿´Î¶à»ñÈ¡Ò»¸ö´ý´ò³öµÄ×Ö·û´®µÄÖµ£¬Êä³ö£¬¸²¸ÇÔ­À´Êä³öµÄÄÚÈÝ¼´¿É";
+    "æœ±ä¿Šæ›¦çš„æ‰“å­—æœºæµ‹è¯•<br>æœ±ä¿Šæ›¦çš„æ‰“å­—æœºæµ‹è¯•<br>æœ±ä¿Šæ›¦çš„æ‰“å­—æœºæµ‹è¯•<br>æœ±ä¿Šæ›¦çš„æ‰“å­—æœºæµ‹è¯•<br>æœ±ä¿Šæ›¦çš„æ‰“å­—æœºæµ‹è¯•<br>æœ±ä¿Šæ›¦çš„æ‰“å­—æœºæµ‹è¯•<br>";
   function getMsg() {
     return msg;
   }

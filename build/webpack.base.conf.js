@@ -21,7 +21,6 @@ module.exports = {
     }
   },
   plugins: [
-    require("autoprefixer"),
     new HtmlWebpackPlugin({
       template: "./src/index.html",
       // 压缩 去掉所有空格

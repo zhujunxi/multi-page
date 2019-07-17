@@ -9,6 +9,8 @@ module.exports = merge(baseWebpackConfig, {
   },
   devServer: {
     publicPath: "/",
-    contentBase: path.join(__dirname, "dist")
+    contentBase: path.join(__dirname, "dist"),
+    host: '172.16.3.102',
+    port: '8088'
   }
 });

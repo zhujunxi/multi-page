@@ -4,7 +4,9 @@ const baseWebpackConfig = require("./webpack.base.conf");
 
 module.exports = merge(baseWebpackConfig, {
   mode: "production",
-  plugins: [new CleanWebpackPlugin(["dist"])],
+  plugins: [
+    new CleanWebpackPlugin(["dist"])
+  ],
   optimization: {
     minimize: false
   }

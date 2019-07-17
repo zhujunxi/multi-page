@@ -16,13 +16,5 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.box {
-	background: #f00;
-	color: #fff;
-	display: flex;
-	transform: all 1s;
-	span {
-		font-size: 32px;
-	}
-}
+@import url("./assets/style/theme.less");
 </style>

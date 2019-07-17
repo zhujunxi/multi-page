@@ -2,6 +2,7 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 function resolve(dir) {
   return path.join(__dirname, "..", dir);
 }
@@ -25,10 +26,14 @@ module.exports = {
       template: "./src/index.html",
       // 压缩 去掉所有空格
       minify: {
-        collapseWhitespace: true
+        collapseWhitespace: false
       }
     }),
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "css/[name].css",
+      chunkFilename: "[id].css"
+    })
   ],
   module: {
     rules: [
